@@ -308,6 +308,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/sm8150-tavil-snd-card_Button_Jack.kl:system/usr/keylayout/sm8150-tavil-snd-card_Button_Jack.kl
 
+# Kernel
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # Keystore
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
