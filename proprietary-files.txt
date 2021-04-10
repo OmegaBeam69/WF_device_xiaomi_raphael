@@ -367,6 +367,32 @@ vendor/lib64/camera/com.qti.sensormodule.raphael_ofilm_imx586.bin
 vendor/lib64/camera/com.qti.sensormodule.raphael_ofilm_ov8856.bin
 vendor/lib64/camera/com.qti.sensormodule.raphael_ofilm_s5k3l6.bin
 vendor/lib64/camera/com.qti.sensormodule.raphael_sunny_s5k3t2.bin
+
+
+# Camera provider
+-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+
+# Camera sensors
+-vendor/lib64/camera/com.qti.sensor.ofilm_hi259.so
+-vendor/lib64/camera/com.qti.sensor.ofilm_imx682.so
+-vendor/lib64/camera/com.qti.sensor.ofilm_ov02b1b.so
+-vendor/lib64/camera/com.qti.sensor.ofilm_s5k3t2.so
+-vendor/lib64/camera/com.qti.sensor.sunny_hi1337.so
+-vendor/lib64/camera/com.qti.sensor.sunny_imx682.so
+-vendor/lib64/camera/com.qti.sensor.sunny_s5k3t2.so
+vendor/lib64/camera/com.qti.sensormodule.j20c_aac_gc02m1b_depth.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_aac_hi1337_ultra.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_aac_hi259_macro.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_ofilm_hi259_macro.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_ofilm_imx682_ver2_wide.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_ofilm_imx682_wide.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_ofilm_ov02b1b_depth.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_ofilm_s5k3t2_front.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_sunny_hi1337_ultra.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_sunny_imx682_ver2_wide.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_sunny_imx682_wide.bin
+vendor/lib64/camera/com.qti.sensormodule.j20c_sunny_s5k3t2_front.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
 vendor/lib64/camera/com.qti.tuned.raphael_luxvisions_imx586.bin
 vendor/lib64/camera/com.qti.tuned.raphael_luxvisions_ov8856.bin
