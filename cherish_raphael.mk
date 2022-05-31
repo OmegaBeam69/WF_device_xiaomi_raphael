@@ -28,7 +28,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Pixel Offline Charging
 USE_PIXEL_CHARGING := true
 
-# Bootanimation
+#V4A
+$(call inherit-product, vendor/v4afx/config.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
