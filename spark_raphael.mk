@@ -22,6 +22,9 @@ $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.spark.maintainer= WasikFahim(@OmegaBeam)
 
+$(call inherit-product, vendor/v4afx/config.mk)
+
+
 # GAPPS build flag, if not defined build type is vanilla
 WITH_GAPPS := false
 
