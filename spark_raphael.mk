@@ -24,6 +24,12 @@ EXTRA_UDFPS_ANIMATIONS := true
 # Spark
 SPARK_BUILD_TYPE := UNOFFICIAL
 
+$(call inherit-product, vendor/v4afx/config.mk)
+
+# GAPPS build flag, if not defined build type is vanilla
+WITH_GAPPS := false
+
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
