@@ -49,7 +49,7 @@ TARGET_ENABLE_BLUR := true
 TARGET_HAS_UDFPS := true
 
 # Allow usage of custom binary linker (LD), default is false
-TARGET_KERNEL_OPTIONAL_LD := false
+TARGET_KERNEL_OPTIONAL_LD := true
 
 # Spoof build description/fingerprint as pixel device
 TARGET_USE_PIXEL_FINGERPRINT := true
