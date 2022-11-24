@@ -34,7 +34,7 @@ RICE_MAINTAINER := Wasik Fahim
 # package type flag (one word only/no spacing)
 # this will reflect on build/display version, a firmware package/zip name 
 # e.g. riceDroid-7.0-COMMUNITY-device-AOSP.zip - AOSP is the default package type, WITH_GMS will override the package type to PIXEL
-RICE_PACKAGE_TYPE := AOSP
+RICE_PACKAGE_TYPE := "VANILLA AOSP"
 
 # Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
 SUSHI_BOOTANIMATION := 1080
@@ -55,8 +55,15 @@ TARGET_KERNEL_OPTIONAL_LD := true
 TARGET_USE_PIXEL_FINGERPRINT := true
 
 # GMS build flags, if none were defined the package build type will be AOSP
-WITH_GMS := true
+WITH_GMS := false
 TARGET_OPTOUT_GOOGLE_TELEPHONY := true
+
+# Compiler will only build GMS playstore services, its dependencies, and Gboard app.
+# package type will change from PIXEL/GMS -> CORE
+TARGET_CORE_GMS := true
+
+# extra flag under TARGET_CORE_GMS
+TARGET_CORE_GMS_EXTRAS := true
 
 
 # Device identifier. This must come after all inclusions.
