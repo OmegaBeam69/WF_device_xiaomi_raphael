@@ -16,7 +16,7 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common VoltageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/spiceos/config/common_full_phone.mk)
 
 # Official-ify
 SPICEOS_BUILDTYPE := UNOFFICIAL
@@ -28,7 +28,7 @@ EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES :=  1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_raphael
+PRODUCT_NAME := spiceos_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
