@@ -29,7 +29,7 @@ RICE_OFFICIAL := false
 # maintainer flag (one word only/no spacing)
 # friendly tip: builders can use init_xxx.cpp as workaround for spacing
 # e.g. property_override("ro.rice.maintainer", "get riced");
-RICE_MAINTAINER := Wasik Fahim
+RICE_MAINTAINER := @OmegaBeam
 
 # package type flag (one word only/no spacing)
 # this will reflect on build/display version, a firmware package/zip name 
