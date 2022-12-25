@@ -28,8 +28,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
 
-$(call inherit-product, vendor/v4afx/config.mk)
-
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
