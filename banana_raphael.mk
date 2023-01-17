@@ -16,15 +16,14 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common VoltageOS stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Official-ify
-SPARK_BUILD_TYPE := UNOFFICIAL
+BANANA_BUILD_TYPE := UNOFFICIAL
 
-#Maintainer
-#MAINTAINER := Wasik Fahim
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.spark.maintainer= @OmegaBeam
+# Maintainer
+BANANA_MAINTAINER := @OmegaBeam
+
 # UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
 
@@ -35,7 +34,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GAPPS := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := spark_raphael
+PRODUCT_NAME := banana_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
