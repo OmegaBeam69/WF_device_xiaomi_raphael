@@ -31,6 +31,8 @@ import /vendor/etc/init/init.mi_thermald.rc
 
 on early-init
     write /proc/sys/kernel/sched_boost 1
+    write /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm/thermal_hbm_disabled 0
+    chmod 0444 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm/thermal_hbm_disabled
 
 on init
     wait /dev/block/platform/soc/1d84000.ufshc
