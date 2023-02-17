@@ -64,6 +64,10 @@
      <!-- Default state for LiveDisplay -->
      <bool name="config_defaultCABC">true</bool>
   
-     <!-- Display color inversion availability -->
-     <bool name="config_displayInversionAvailable">false</bool>
+
+    <!-- Display color inversion availability -->
+    <bool name="config_displayInversionAvailable">false</bool>
+
+    <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
 </resources>
