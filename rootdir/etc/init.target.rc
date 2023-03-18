@@ -29,9 +29,6 @@
 
 import /vendor/etc/init/init.mi_thermald.rc
 
-on early-init
-    write /proc/sys/kernel/sched_boost 1
-
 on init
     wait /dev/block/platform/soc/1d84000.ufshc
     symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
