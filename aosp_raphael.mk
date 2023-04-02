@@ -16,27 +16,27 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
 
 # Spark
-SPARK_BUILD_TYPE := UNOFFICIAL
+CUSTOM_BUILD_TYPE := UNOFFICIAL
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-#GMS
-WITH_GAPPS := false
+# VoidUI Maintainer Flags
+VOID_MAINTAINER := @OmegaBeam
 
-#Maintainer
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.spark.maintainer= @OmegaBeam
-
+#Extras
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP  := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := spark_raphael
+PRODUCT_NAME := aosp_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
