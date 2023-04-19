@@ -16,13 +16,13 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Maintainer Flag (one word only/no spacing)
-MAINTAINER := ΛＲＣＨＩＴΣＣＴツ(@SageOfD6Path)
+#BUILD TYPE
+CUSTOM_BUILD_TYPE := UNOFFICIAL
 
-# GAPPS build flag, if not defined build type is vanilla
-#SUPERIOR_GAPPS = full
+#MAINTAINER
+VOID_MAINTAINER := @OmegaBeam
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -33,22 +33,11 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 # Disable/Enable Blur Support, default is false
 TARGET_ENABLE_BLUR := true
 
-# Officialify 
-SUPERIOR_OFFICIAL := true
-
-#Udfps Stuff
-SUPERIOR_UDFPS_ANIMATIONS := true
-
-# Superior Prebuilts
-USE_QUICKPIC := true
-USE_DUCKDUCKGO := true
-USE_MOTO_CALCULATOR := true
-
 # Quick Tap Feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_raphael
+PRODUCT_NAME := aosp_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
