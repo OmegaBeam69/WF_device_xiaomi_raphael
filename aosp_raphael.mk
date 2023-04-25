@@ -36,6 +36,9 @@ TARGET_ENABLE_BLUR := true
 # Quick Tap Feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
+#Live Wallpaper
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_raphael
 PRODUCT_DEVICE := raphael
