@@ -16,7 +16,7 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/vendor/legion/config/common_full_phone.mk)
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
 # Maintainer Flag (one word only/no spacing)
 LEGION_MAINTAINER := @OmegaBeam
