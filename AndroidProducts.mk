@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_raphael.mk
+    $(LOCAL_DIR)/spark_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_raphael-user \
-    superior_raphael-userdebug \
-    superior_raphael-eng
+    spark_raphael-user \
+    spark_raphael-userdebug \
+    spark_raphael-eng
