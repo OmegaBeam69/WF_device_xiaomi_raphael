@@ -36,8 +36,9 @@ TARGET_ENABLE_BLUR := true
 
 # Officialify 
 SPARK_BUILD_TYPE := UNOFFICIAL
+
 #Udfps Stuff
-SUPERIOR_UDFPS_ANIMATIONS := true
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Quick Tap Feature
 TARGET_SUPPORTS_QUICK_TAP := true
