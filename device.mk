@@ -335,17 +335,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Perf
-PRODUCT_PACKAGES += \
-    libpsi.vendor \
-    libtflite
-
-# Perf Jars
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
-
-# IRQ balance config
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -487,6 +476,7 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     system/core/libprocessgroup/profiles/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json
+
 
 # Telephony
 PRODUCT_PACKAGES += \
