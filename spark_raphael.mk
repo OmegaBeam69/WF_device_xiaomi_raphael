@@ -12,23 +12,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from raphael device
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Nusantara stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common Spark stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
-# Nusantara Flags
-USE_GAPPS := true
-NAD_BUILD_TYPE := OFFICIAL
-EXTRA_FOD_ANIMATIONS := true
+# UDFPS animations
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
+
+#Blur
+TARGET_ENABLE_BLUR := true
+
+#Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
-# Pixel Offline Charging
-USE_PIXEL_CHARGING := true
+# SPARK OS
+WITH_GAPPS := false
+SPARK_BUILD_TYPE := UNOFFICIAL
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.spark.maintainer= WasikFahim(@OmegaBeam)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_raphael
+PRODUCT_NAME := spark_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi

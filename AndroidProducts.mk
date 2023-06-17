@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_raphael.mk
+    $(LOCAL_DIR)/spark_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_raphael-user \
-    nad_raphael-userdebug \
-    nad_raphael-eng
+    spark_raphael-user \
+    spark_raphael-userdebug \
+    spark_raphael-eng
