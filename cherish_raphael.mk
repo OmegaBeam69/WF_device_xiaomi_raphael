@@ -12,14 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from raphael device
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Nusantara stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-# Nusantara Flags
-USE_GAPPS := true
-NAD_BUILD_TYPE := OFFICIAL
-EXTRA_FOD_ANIMATIONS := true
+# Cherish Flags
+WITH_GAPPS := false
+CHERISH_BUILD_TYPE := UNOFFICIAL
+EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Maintainer
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer= WasikFahim(@OmegaBeam)
 
 # Pixel Offline Charging
 USE_PIXEL_CHARGING := true
@@ -28,7 +32,7 @@ USE_PIXEL_CHARGING := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_raphael
+PRODUCT_NAME := cherish_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
