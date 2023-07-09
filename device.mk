@@ -57,10 +57,6 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
-# KProfiles
-PRODUCT_PACKAGES += \
-    KProfiles
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
