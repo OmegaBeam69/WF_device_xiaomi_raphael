@@ -15,15 +15,9 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common CherishOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common DerpfestOS stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-# Maintainer Flag (one word only/no spacing)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer= WasikFahim(@OmegaBeam)
-
-# GAPPS build flag, if not defined build type is vanilla
-#WITH_GAPPS := false
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -38,7 +32,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_ENABLE_BLUR := true
 
 # Officialify 
-CHERISH_BUILD_TYPE := UNOFFICIAL
+DERP_BUILDTYPE := UNOFFICIAL
 
 #Udfps Stuff
 EXTRA_UDFPS_ANIMATIONS := true
@@ -48,7 +42,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cherish_raphael
+PRODUCT_NAME := derp_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
