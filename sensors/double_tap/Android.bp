@@ -5,7 +5,7 @@
 //
 
 cc_library_shared {
-    name: "sensors.raphael_double_tap",
+    name: "sensors.double_tap",
     defaults: ["hidl_defaults"],
     srcs: [
         "double_tap_hal.cpp",

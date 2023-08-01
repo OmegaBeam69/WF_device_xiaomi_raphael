@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "sensors.raphael_double_tap"
+#define LOG_TAG "sensors.double_tap"
 
 #include <errno.h>
 #include <fcntl.h>
