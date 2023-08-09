@@ -15,8 +15,8 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common DerpfestOS stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common AICPOS stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 
 # Bootanimation Resolution
@@ -28,18 +28,19 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 # Disable/Enable Blur Support, default is false
 TARGET_ENABLE_BLUR := true
 
-# Officialify 
-DERP_BUILDTYPE := UNOFFICIAL
-
 #Udfps Stuff
 EXTRA_UDFPS_ANIMATIONS := true
 
 # Quick Tap Feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="WasikFahim(@OmegaBeam)"
+
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_raphael
+PRODUCT_NAME := aicp_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
