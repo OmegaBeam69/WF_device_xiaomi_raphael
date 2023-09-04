@@ -15,8 +15,8 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common SparkOS stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 
 # Bootanimation Resolution
@@ -34,18 +34,11 @@ EXTRA_UDFPS_ANIMATIONS := true
 # Quick Tap Feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
-# With Gapps
-WITH_GAPPS := false
-
-# Officially 
-SPARK_BUILD_TYPE := UNOFFICIAL
-
-# Maintainer
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.spark.maintainer= Wasik|Fahim
+# ArrowOS additions 
+ DEVICE_MAINTAINER := Wasik | Fahim
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := spark_raphael
+PRODUCT_NAME := arrow_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
